@@ -1,6 +1,6 @@
 <template>
     <div>
-        alex
+        thx use alexvue!
     </div>
 </template>
 
