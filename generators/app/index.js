@@ -113,9 +113,7 @@ module.exports = class extends Generator {
 
     this.fs.copy(
       this.templatePath("index.html"),
-      this.destinationPath("index.html"), {
-        name: this.props.appName,
-      }
+      this.destinationPath("index.html")
     );
 
     this.fs.copy(
@@ -137,8 +135,8 @@ module.exports = class extends Generator {
     this.log(yosay(
       '\nYour front templates has been created successfully!\n'+
       'To get started:\n' + '\n' +
-      chalk.red(' cd ' + this.props.appName + '\n' + 
-      ' npm start'+ '\n')
+      chalk.red('cd ' + this.props.appName + '\n' + 
+      'npm start'+ '\n')
     ));
   }
 
