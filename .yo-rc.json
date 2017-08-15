@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "alex",
+      "authorEmail": "290477385@qq.com",
+      "authorUrl": ""
+    }
+  }
+}
