@@ -59,4 +59,16 @@ filter.moneyFormat = (val, notInt, notReal) => {
     }
 
     return intPart + radPoint + tail;
+
+    
 };
+
+filter.install = function (Vue, options) {
+    for (var filterName in filter) {
+        if (filter.hasOwnProperty(filterName) && filterName !== 'install') {
+            Vue.filter(filterName, filter[filterName]);
+        }
+    }
+};
+
+export default filter;

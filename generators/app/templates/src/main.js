@@ -5,11 +5,13 @@ import App from './App'
 import router from './router'
 import flexible from 'utils/flexible'
 import utils from 'utils/utils'
+import filter from 'utils/filter'
 import store from 'store/store'
 
 import 'styles/reset.css'
 
 Vue.use(flexible);
+Vue.use(filter);
 
 Vue.config.productionTip = false;
 
