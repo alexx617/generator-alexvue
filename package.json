@@ -1,12 +1,11 @@
 {
   "name": "generator-alexvue",
-  "version": "0.1.52",
+  "version": "0.1.53",
   "description": "",
-  "homepage": "",
   "author": {
     "name": "alex",
     "email": "290477385@qq.com",
-    "url": ""
+    "url": "https://github.com/alexx617"
   },
   "files": [
     "generators"

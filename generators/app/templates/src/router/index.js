@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-// import home from '@/components/home'
+
 const home = r => require.ensure([], () => r(require('components/home')), 'home')
 
 Vue.use(VueRouter)
