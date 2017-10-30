@@ -1,7 +1,8 @@
-var path = require('path')
-var utils = require('./utils')
-var config = require('../config')
-var vueLoaderConfig = require('./vue-loader.conf')
+'use strict'
+const path = require('path')
+const utils = require('./utils')
+const config = require('../config')
+const vueLoaderConfig = require('./vue-loader.conf')
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
@@ -20,19 +21,19 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.vue', '.json'],
-    modules: [
-      resolve('src'),
-      resolve('node_modules')
-    ],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
-      'src': resolve('src'),
-      'components': resolve('src/components'),
-      'utils': resolve('src/utils'),
-      'static': resolve('static'),
-      'store': resolve('src/store'),
-      'styles': resolve('src/styles'),
+      'src': path.resolve(__dirname, '../src'),
+      'styles': path.resolve(__dirname,'../src/styles'),
+      'utils': path.resolve(__dirname,'../src/utils'),
+      'store': path.resolve(__dirname,'../src/store'),
+      'router': path.resolve(__dirname,'../src/router'),
+      'style': path.resolve(__dirname,'../src/style'),
+      'static': path.resolve(__dirname, '../static'),
+      'components': path.resolve(__dirname, '../src/components'),
+      'widgets': path.resolve(__dirname, '../src/components/widgets'),
+      'mixins': path.resolve(__dirname, '../src/components/mixins'),
     }
   },
   module: {
